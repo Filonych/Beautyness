@@ -22,15 +22,15 @@
   a:visited {
     text-decoration: none;
     display: inline-block;
-  }
-  
-  a:visited {
-    color: black;
+    color: #000;
   }
   
   a:hover {
     text-decoration: none;
   }
+
+  address {
+    font-style: normal;}
   
   img {
     vertical-align: top;
@@ -106,7 +106,7 @@ body {
       gap: 32px;
   }
   
-  .header__logo {
+  .logo {
       display: block;
       background-image: url(../img/Logo.svg);
       width: 33px;
@@ -114,7 +114,7 @@ body {
       margin-right: 12px;
   }
   
-  .header__name {
+  .name {
       font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 28px;
@@ -165,6 +165,7 @@ body {
       gap: 24px;
   }
 
+  a.header__link:hover,
   .header__icon:hover {
     color: #A2B3BF;
 
@@ -289,14 +290,14 @@ color: #555555;
 margin-bottom: 30px;
 }
 
-.bottom-link {
+.button-link {
     width: auto;
     padding: 23px 34px 24px;
 height: 55px;
 border: 2px solid #5C8692;
 }
 
-a.bottom-link {
+a.button-link {
     font-weight: 800;
 font-size: 14px;
 line-height: 1.25;
@@ -304,6 +305,10 @@ text-align: center;
 letter-spacing: 0.12em;
 text-transform: uppercase;
 padding-top: 19px;
+}
+
+a.button-link:hover {
+    color: #5C8692;
 }
 
 .about {
@@ -412,10 +417,12 @@ line-height: 1.2;
 
 .services__img {
     box-shadow: 0px 20px 40px rgba(42, 68, 75, 0.2);
+    width: 600px;
+    height: 640px;
 }
 
 .services__price-list {
-    width: 609px;
+    width: 600px;
     padding-top: 30px;
     padding-left: 68px;    
     background-image: url(../img/services-bckg.png);
@@ -475,7 +482,7 @@ padding-bottom: 22px;
 margin-bottom: 18px;
   }
 
-  .bottom-link_services {
+  .button-link_services {
     margin-top: 17px;
   }
 
@@ -605,5 +612,341 @@ color: #555555;
 
   }
 
- 
+  .contact {
+    min-height: 930px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EDF5F7;
+  }
+
+  .contact__wrap {
+    display: flex;
+    gap: 115px;
+
+  }
+
+  .contact__discount {
+    width: 534px;
+  }
+
+  .title_contact {
+    width: 435px;
+  }
+
+
+  .contact__desc {
+    font-weight: 400;
+font-size: 18px;
+line-height: 1.75;
+color: #555555;
+margin-bottom: 37px;
+  }
+
+.contact__coupon-wrap {
+    display: flex;
+
+}
+
+.contact__mail-tel-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 40px;
+    background: #fff;
+    width: 288px;
+height: 145px;
+border: 1px solid #95BFCB;
+}
+
+.contact__mail-email {
+display: flex;
+align-items: flex-start;
+gap: 19px;
+}
+
+.contact__mail-wrap {
+    display: flex;
+    flex-direction: column;
+}
+    
+.dots {
+    width: 30px;
+    margin-top: 5px;
+}
+
+
+.contact__action {
+    font-weight: 800;
+font-size: 14px;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+}
+
+.contact__mail-tel {
+    font-weight: 500;
+font-size: 15px;
+}
+
+.contact__coupon {
+    width: 167px;
+height: 145px;
+background: #1E2C30;
+color: #fff;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+}
+
+
+.get-coupon {
+    font-weight: 800;
+font-size: 15px;
+line-height: 1.75;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+}
+
+.discount {
+    font-weight: 800;
+font-size: 18px;
+line-height: 1.75;
+letter-spacing: 0.02em;
+}
+
+
+.contact__form {
+display: flex;
+flex-direction: column;
+width: 550px;
+height: 667px;
+background: #FFFFFF;
+box-shadow: 0px 20px 40px rgba(42, 68, 75, 0.13);
+padding: 66px 75px;
+gap: 15px;
+}
+
+.input {
+    width: 400px;
+    height: 65px;
+    border: 1px solid #5C8692;
+    padding-left: 54px;
+    font-weight: 400;
+font-size: 18px;
+
+}
+
+.input-name {
+    background: url(../img/cont-User.svg);
+    background-repeat: no-repeat;
+    background-position: 3% 50%;
+
+}
+
+.input-email {
+    background: url(../img/cont-mail.svg);
+    background-repeat: no-repeat;
+    background-position: 3% 50%;
+}
+
+.input-tel {
+    background: url(../img/cont-phone.svg);
+    background-repeat: no-repeat;
+    background-position: 3% 50%;
+}
+
+.input-service {
+    background: url(../img/cont-book-open.svg);
+    background-repeat: no-repeat;
+    background-position: 3% 50%;
+}
+
+.input-text {
+    resize: none;
+    width: 399px;
+height: 136px;
+background: url(../img/cont-edit.svg);
+    background-repeat: no-repeat;
+    background-position: 3% 18%;
+    padding-top: 18px;
+}
+
+.contact__button {
+    width: 399px;
+height: 64px;
+background: #5C8692;
+font-weight: 800;
+font-size: 14px;
+line-height: 1.25;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
   
+ .blog {
+    min-height: 1124px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+
+
+ .title_blog {
+    margin-bottom: 40px;
+ }
+ 
+.blog__cards {
+    display: flex;
+    gap: 44px;
+    margin-bottom: 60px;
+}
+
+ .blog__card-text {
+    width: 370px;
+height: 254px;
+background: #EDF5F7;
+padding: 30px 27px 30px 26px;
+ }
+
+ .blog__card-date-line-name {
+    font-weight: 700;
+font-size: 13px;
+display: flex;
+align-items: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: #5C8692;
+margin-bottom: 8px;
+ }
+
+.blog__date {
+    padding-right: 8px;
+}
+
+ .blog__line {
+    width: 19.79px;
+height: 0px;
+border: 2px solid #272D32;
+ }
+
+ .blog__name {
+    padding-left: 11px;
+ }
+
+ .blog__card-title {
+    font-family: 'Playfair Display';
+font-weight: 700;
+font-size: 22px;
+line-height: 1.4;
+letter-spacing: 0.02em;
+margin-bottom: 14px;
+ }
+
+ .blog__card-desc {
+    font-weight: 400;
+font-size: 18px;
+line-height: 1.55;: 0.02em;
+color: #555555;
+ }
+
+ .footer__main {
+    min-height: 635px;
+    background: #1E2C30;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .footer__social {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 52px;
+border-bottom: 1px solid #ffffff1c;
+margin-bottom: 52px;
+}
+
+a > .name_footer {
+    color: #fff;
+}
+ 
+
+ .logo_footer {
+    width: 65px;
+    height: 65px;
+    background-repeat: no-repeat;
+    background-size: 98%;
+    margin-right: 7px;
+ }
+
+ .name_footer {
+    font-size: 40px;
+ }
+
+ a.footer__icon {
+    color: #fff;
+    text-align: center;
+    padding-top: 16px;
+ }
+
+ .footer__icon {
+    width: 55px;
+height: 55px;
+border: 2px solid #5C8692;
+ }
+
+ .icon-fb_footer {
+    margin-left: auto;
+ }
+
+ 
+ .footer__icon:hover {
+    color: #5C8692;
+
+  }
+
+  .footer__nav {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .footer__nav-title {
+    font-family: 'Playfair Display';
+font-weight: 700;
+font-size: 22px;
+color: #FFFFFF;
+margin-bottom: 21px;
+  }
+
+  a.footer__nav-item,
+  .footer__nav-item {
+    font-weight: 500;
+font-size: 17px;
+letter-spacing: -0.01em;
+color: #FFFFFF;
+margin-bottom: 8px;
+  }
+  
+  .footer__nav-grid {
+    display: grid;
+    grid-template-columns: 76px 234px;
+    grid-column-gap: 14px;
+  }
+
+.footer__copyrights {
+    height: 75px;
+    width: 100%;
+background: #111E22;
+color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+}
